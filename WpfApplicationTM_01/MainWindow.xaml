@@ -39,7 +39,7 @@
                 <CheckBox Content="Monotonic" Height="16" HorizontalAlignment="Left" Margin="6,6,0,0" Name="checkBox3" VerticalAlignment="Top" />
                 <CheckBox Content="Cyclic" Height="16" HorizontalAlignment="Left" Margin="6,28,0,0" Name="checkBox4" VerticalAlignment="Top" />
                 <Label Content="N =" Height="28" HorizontalAlignment="Left" Margin="62,22,0,0" Name="label1" VerticalAlignment="Top" />
-                <TextBox Height="23" HorizontalAlignment="Left" Margin="98,26,0,0" Name="txtBoxCycilc" VerticalAlignment="Top" Width="47" Text="100" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="98,24,0,0" Name="txtBoxCyclic" VerticalAlignment="Top" Width="47" Text="100" />
             </Grid>
         </GroupBox>
         <GroupBox Header="Experimental Data" Height="100" HorizontalAlignment="Left" Margin="12,471,0,0" Name="groupBox5" VerticalAlignment="Top" Width="200">
