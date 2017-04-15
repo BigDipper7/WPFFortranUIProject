@@ -40,7 +40,7 @@
         </GroupBox>
         <GroupBox Header="Command" Height="100" HorizontalAlignment="Left" Margin="258,471,0,0" Name="groupBox6" VerticalAlignment="Top" Width="200">
             <Grid>
-                <Button Content="Run" Height="23" HorizontalAlignment="Left" Margin="6,0,0,0" Name="btnRun" VerticalAlignment="Center" Width="75" />
+                <Button Content="Run" Height="23" HorizontalAlignment="Left" Margin="6,0,0,0" Name="btnRun" VerticalAlignment="Center" Width="75" Click="btnRun_Click" />
                 <Button Content="Print" Height="23" HorizontalAlignment="Left" Margin="98,0,0,0" Name="btnPrint" VerticalAlignment="Center" Width="75" />
             </Grid>
         </GroupBox>

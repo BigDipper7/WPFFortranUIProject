@@ -71,5 +71,10 @@ namespace WpfApplicationTM_01
             ofd.RestoreDirectory = true;
             ofd.ShowDialog();
         }
+
+        private void btnRun_Click(object sender, RoutedEventArgs e)
+        {
+            this.invokeFortranProgram();
+        }
     }
 }
