@@ -4,5 +4,14 @@
         Title="WindowParameters" Height="370" Width="615">
     <Grid>
         <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="263,12,0,0" Name="label1" VerticalAlignment="Top" />
+        <GroupBox Header="groupBox1" Height="100" HorizontalAlignment="Left" Margin="21,49,0,0" Name="groupBox1" VerticalAlignment="Top" Width="200">
+            <Grid />
+        </GroupBox>
+        <GroupBox Header="groupBox2" Height="100" HorizontalAlignment="Left" Margin="21,188,0,0" Name="groupBox2" VerticalAlignment="Top" Width="200">
+            <Grid />
+        </GroupBox>
+        <GroupBox Header="groupBox3" Height="239" HorizontalAlignment="Left" Margin="237,49,0,0" Name="groupBox3" VerticalAlignment="Top" Width="200">
+            <Grid />
+        </GroupBox>
     </Grid>
 </Window>
