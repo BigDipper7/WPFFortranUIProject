@@ -1,7 +1,7 @@
 ﻿<Window x:Class="WpfApplicationTM_01.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
+        Title="MainWindow" Height="566" Width="530" Loaded="Window_Loaded">
     <Grid>
         <Button Content="Test" Height="23" HorizontalAlignment="Left" Margin="428,12,0,0" Name="btnTest" VerticalAlignment="Top" Width="75" Click="btnTest_Click" />
         <Label Content="------- Main Program -------" Height="28" HorizontalAlignment="Center" Margin="0,50,0,0" Name="lblTitle" VerticalAlignment="Top" />
@@ -15,6 +15,21 @@
             <Grid>
                 <ComboBox Height="23" HorizontalAlignment="Center" Margin="0,10,0,0" Name="comboBox2" VerticalAlignment="Top" Width="120" />
                 <Button Content="Parameters" Height="23" HorizontalAlignment="Center" Margin="0,0,0,10" Name="btnParams" VerticalAlignment="Bottom" Width="75" />
+            </Grid>
+        </GroupBox>
+        <Image Height="150" HorizontalAlignment="Left" Margin="12,190,0,0" Name="imgTestType" Stretch="Fill" VerticalAlignment="Top" Width="200" />
+        <Image Height="150" HorizontalAlignment="Left" Margin="258,190,0,0" Name="imgConsModel" Stretch="Fill" VerticalAlignment="Top" Width="200" />
+        <GroupBox Header="Drainage Condition" Height="100" HorizontalAlignment="Left" Margin="12,357,0,0" Name="groupBox3" VerticalAlignment="Top" Width="200">
+            <Grid>
+                <CheckBox Content="Drained" Height="16" HorizontalAlignment="Left" Margin="6,6,0,0" Name="checkBox1" VerticalAlignment="Top" />
+                <CheckBox Content="Undrained" Height="16" HorizontalAlignment="Left" Margin="6,28,0,0" Name="checkBox2" VerticalAlignment="Top" />
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Loading Condition" Height="100" HorizontalAlignment="Left" Margin="258,357,0,0" Name="groupBox4" VerticalAlignment="Top" Width="200">
+            <Grid>
+                <CheckBox Content="Monotonic" Height="16" HorizontalAlignment="Left" Margin="6,6,0,0" Name="checkBox3" VerticalAlignment="Top" />
+                <CheckBox Content="Cyclic" Height="16" HorizontalAlignment="Left" Margin="6,28,0,0" Name="checkBox4" VerticalAlignment="Top" />
+                <Label Content="N=" Height="28" HorizontalAlignment="Left" Margin="62,22,0,0" Name="label1" VerticalAlignment="Top" />
             </Grid>
         </GroupBox>
     </Grid>
