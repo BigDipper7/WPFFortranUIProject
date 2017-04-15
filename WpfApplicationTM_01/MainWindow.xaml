@@ -26,8 +26,8 @@
                 <Button Content="Parameters" Height="23" HorizontalAlignment="Center" Margin="0,0,0,10" Name="btnParams" VerticalAlignment="Bottom" Width="75" Click="btnParams_Click" />
             </Grid>
         </GroupBox>
-        <Image Height="150" HorizontalAlignment="Left" Margin="12,190,0,0" Name="imgTestType" Stretch="Fill" VerticalAlignment="Top" Width="200" />
-        <Image Height="150" HorizontalAlignment="Left" Margin="258,190,0,0" Name="imgConsModel" Stretch="Fill" VerticalAlignment="Top" Width="200" />
+        <Image Height="150" HorizontalAlignment="Left" Margin="12,190,0,0" Name="imgTestType" Stretch="Fill" VerticalAlignment="Top" Width="200" Source="/WpfApplicationTM_01;component/images/891833169114742765.jpg" />
+        <Image Height="150" HorizontalAlignment="Left" Margin="258,190,0,0" Name="imgConsModel" Stretch="Fill" VerticalAlignment="Top" Width="200" Source="/WpfApplicationTM_01;component/images/124816649613094028.jpg" />
         <GroupBox Header="Drainage Condition" Height="100" HorizontalAlignment="Left" Margin="12,357,0,0" Name="groupBox3" VerticalAlignment="Top" Width="200">
             <Grid>
                 <CheckBox Content="Drained" Height="16" HorizontalAlignment="Left" Margin="6,6,0,0" Name="checkBox1" VerticalAlignment="Top" />
