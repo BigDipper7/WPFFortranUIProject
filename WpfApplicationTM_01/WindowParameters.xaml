@@ -16,7 +16,7 @@
                 <TextBox Height="20" HorizontalAlignment="Left" Margin="62,85,0,0" Name="txtBoxn" VerticalAlignment="Top" Width="66" Text="0.667" />
             </Grid>
         </GroupBox>
-        <GroupBox Header="Compression" Height="113" HorizontalAlignment="Left" Margin="21,188,0,0" Name="groupBox2" VerticalAlignment="Top" Width="200">
+        <GroupBox Header="Compression" Height="127" HorizontalAlignment="Left" Margin="21,188,0,0" Name="groupBox2" VerticalAlignment="Top" Width="200">
             <Grid>
                 <Label Content="pm0" Height="28" HorizontalAlignment="Left" Margin="20,10,0,0" Name="lblpm0" VerticalAlignment="Top" />
                 <Label Content="dr" Height="28" HorizontalAlignment="Left" Margin="20,35,0,0" Name="lbldr" VerticalAlignment="Top" />
@@ -48,12 +48,22 @@
                 <TextBox Height="20" HorizontalAlignment="Left" Margin="72,210,0,0" Name="txtBoxnd" VerticalAlignment="Top" Width="66" Text="0" />
             </Grid>
         </GroupBox>
-        <GroupBox Header="Breakage" Height="100" HorizontalAlignment="Left" Margin="455,49,0,0" Name="groupBox4" VerticalAlignment="Top" Width="200">
+        <GroupBox Header="Breakage" Height="122" HorizontalAlignment="Left" Margin="455,49,0,0" Name="groupBox4" VerticalAlignment="Top" Width="200">
             <Grid>
+                <Label Content="a" Height="28" HorizontalAlignment="Left" Margin="20,10,0,0" Name="lbla" VerticalAlignment="Top" />
+                <Label Content="p" Height="28" HorizontalAlignment="Left" Margin="20,35,0,0" Name="lblp" VerticalAlignment="Top" />
+                <Label Content="ecuf" Height="28" HorizontalAlignment="Left" Margin="20,60,0,0" Name="lblecuf" VerticalAlignment="Top" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="62,10,0,0" Name="txtBoxa" VerticalAlignment="Top" Width="66" Text="10000000" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="62,35,0,0" Name="txtBoxp" VerticalAlignment="Top" Width="66" Text="10" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="62,60,0,0" Name="txtBoxecuf" VerticalAlignment="Top" Width="66" Text="0.25" />
             </Grid>
         </GroupBox>
-        <GroupBox Header="Bond" Height="100" HorizontalAlignment="Left" Margin="461,188,0,0" Name="groupBox5" VerticalAlignment="Top" Width="200">
+        <GroupBox Header="Bond" Height="127" HorizontalAlignment="Left" Margin="455,188,0,0" Name="groupBox5" VerticalAlignment="Top" Width="200">
             <Grid>
+                <Label Content="bond0" Height="28" HorizontalAlignment="Left" Margin="20,10,0,0" Name="lblbond0" VerticalAlignment="Top" />
+                <Label Content="dw" Height="28" HorizontalAlignment="Left" Margin="20,35,0,0" Name="lbldw" VerticalAlignment="Top" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="62,10,0,0" Name="txtBoxbond0" VerticalAlignment="Top" Width="66" Text="0" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="62,35,0,0" Name="txtBoxdw" VerticalAlignment="Top" Width="66" Text="0" />
             </Grid>
         </GroupBox>
     </Grid>
