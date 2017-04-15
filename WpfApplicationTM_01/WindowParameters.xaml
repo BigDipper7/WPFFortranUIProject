@@ -21,9 +21,9 @@
                 <Label Content="pm0" Height="28" HorizontalAlignment="Left" Margin="20,10,0,0" Name="lblpm0" VerticalAlignment="Top" />
                 <Label Content="dr" Height="28" HorizontalAlignment="Left" Margin="20,35,0,0" Name="lbldr" VerticalAlignment="Top" />
                 <Label Content="dn" Height="28" HorizontalAlignment="Left" Margin="20,60,0,0" Name="lbldn" VerticalAlignment="Top" />
-                <TextBox Height="20" HorizontalAlignment="Left" Margin="62,10,0,0" Name="txtBoxpm0" VerticalAlignment="Top" Width="66" Text="100" />
-                <TextBox Height="20" HorizontalAlignment="Left" Margin="62,35,0,0" Name="txtBoxdr" VerticalAlignment="Top" Width="66" Text="100" />
-                <TextBox Height="20" HorizontalAlignment="Left" Margin="62,60,0,0" Name="txtBoxdn" VerticalAlignment="Top" Width="66" Text="100" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="62,10,0,0" Name="txtBoxpm0" VerticalAlignment="Top" Width="66" Text="1000000" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="62,35,0,0" Name="txtBoxdr" VerticalAlignment="Top" Width="66" Text="0.3" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="62,60,0,0" Name="txtBoxdn" VerticalAlignment="Top" Width="66" Text="2" />
             </Grid>
         </GroupBox>
         <GroupBox Header="Plasticity" Height="266" HorizontalAlignment="Left" Margin="237,49,0,0" Name="groupBox3" VerticalAlignment="Top" Width="200">
@@ -37,15 +37,15 @@
                 <Label Content="kp" Height="28" HorizontalAlignment="Left" Margin="20,160,0,0" Name="lblkp" VerticalAlignment="Top" />
                 <Label Content="np" Height="28" HorizontalAlignment="Left" Margin="20,185,0,0" Name="lblnp" VerticalAlignment="Top" />
                 <Label Content="nd" Height="28" HorizontalAlignment="Left" Margin="20,210,0,0" Name="lblnd" VerticalAlignment="Top" />
-                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,10,0,0" Name="txtBoxphi" VerticalAlignment="Top" Width="66" Text="100" />
-                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,35,0,0" Name="txtBoxec0" VerticalAlignment="Top" Width="66" Text="100" />
-                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,60,0,0" Name="txtBoxlambda" VerticalAlignment="Top" Width="66" Text="100" />
-                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,85,0,0" Name="txtBoxksi" VerticalAlignment="Top" Width="66" Text="0" />
-                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,110,0,0" Name="txtBoxecu0" VerticalAlignment="Top" Width="66" Text="0" />
-                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,135,0,0" Name="txtBoxAd" VerticalAlignment="Top" Width="66" Text="0" />
-                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,160,0,0" Name="txtBoxkp" VerticalAlignment="Top" Width="66" Text="0" />
-                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,185,0,0" Name="txtBoxnp" VerticalAlignment="Top" Width="66" Text="0" />
-                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,210,0,0" Name="txtBoxnd" VerticalAlignment="Top" Width="66" Text="0" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,10,0,0" Name="txtBoxphi" VerticalAlignment="Top" Width="66" Text="30" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,35,0,0" Name="txtBoxec0" VerticalAlignment="Top" Width="66" Text="0.875" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,60,0,0" Name="txtBoxlambda" VerticalAlignment="Top" Width="66" Text="0.035" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,85,0,0" Name="txtBoxksi" VerticalAlignment="Top" Width="66" Text="1" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,110,0,0" Name="txtBoxecu0" VerticalAlignment="Top" Width="66" Text="0.565" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,135,0,0" Name="txtBoxAd" VerticalAlignment="Top" Width="66" Text="1" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,160,0,0" Name="txtBoxkp" VerticalAlignment="Top" Width="66" Text="0.003" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,185,0,0" Name="txtBoxnp" VerticalAlignment="Top" Width="66" Text="1" />
+                <TextBox Height="20" HorizontalAlignment="Left" Margin="72,210,0,0" Name="txtBoxnd" VerticalAlignment="Top" Width="66" Text="1" />
             </Grid>
         </GroupBox>
         <GroupBox Header="Breakage" Height="122" HorizontalAlignment="Left" Margin="455,49,0,0" Name="groupBox4" VerticalAlignment="Top" Width="200">
