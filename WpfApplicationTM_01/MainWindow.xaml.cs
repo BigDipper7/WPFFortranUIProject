@@ -79,7 +79,8 @@ namespace WpfApplicationTM_01
 
         private void btnPrint_Click(object sender, RoutedEventArgs e)
         {
-
+            WindowPlot winPlot = new WindowPlot();
+            winPlot.ShowDialog();
         }
     }
 }
