@@ -59,11 +59,28 @@ namespace WpfApplicationTM_01
             FileUtil.FileRowText(filePath, (row) => {
                 string[] items = row.Split(new Char[]{' '}, StringSplitOptions.RemoveEmptyEntries);
 
+                Console.WriteLine(row);
+
                 OutputStrc resOutput = new OutputStrc();
                 resOutput.IP = int.Parse(items[0]);
                 resOutput.Eps1 = (double)FileUtil.ChangeDataToD(items[1]);
                 resOutput.Eps3 = (double)FileUtil.ChangeDataToD(items[2]);
-                rawPoints.Add(new RawPoint(resOutput.Eps1, resOutput.Eps3));
+                resOutput.EpsD = (double)FileUtil.ChangeDataToD(items[3]);
+                resOutput.EpsV = (double)FileUtil.ChangeDataToD(items[4]);
+                resOutput.S1 = (double)FileUtil.ChangeDataToD(items[5]);
+                resOutput.S3 = (double)FileUtil.ChangeDataToD(items[6]);
+                resOutput.p = (double)FileUtil.ChangeDataToD(items[7]);
+                resOutput.q = (double)FileUtil.ChangeDataToD(items[8]);
+                resOutput.ec = (double)FileUtil.ChangeDataToD(items[9]);
+                resOutput.e = (double)FileUtil.ChangeDataToD(items[10]);
+                resOutput.d = (double)FileUtil.ChangeDataToD(items[11]);
+                resOutput.eta = (double)FileUtil.ChangeDataToD(items[12]);
+                resOutput.wp = (double)FileUtil.ChangeDataToD(items[13]);
+                resOutput.Br = (double)FileUtil.ChangeDataToD(items[14]);
+                resOutput.pm = (double)FileUtil.ChangeDataToD(items[15]);
+                
+                this.rawPoints.Add(new RawPoint(resOutput.S1, resOutput.S3));
+                return;
             });
         }
 

@@ -41,7 +41,7 @@ namespace WpfApplicationTM_01
                     String line;
                     while ((line = sr.ReadLine()) != null)
                     {
-                        callback(line);
+                        Console.WriteLine(line);
                         //this.ListBox1.Items.Add("line ");   //增加读出的内容到listbox            
                         i++;
 
@@ -49,6 +49,8 @@ namespace WpfApplicationTM_01
                         {
                             continue;
                         }
+
+                        callback(line);
 
                         result.Add(line);
                     }
