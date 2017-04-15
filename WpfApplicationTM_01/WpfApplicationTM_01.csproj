@@ -59,6 +59,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="FileUtil.cs" />
     <Compile Include="WindowInitialStressState.xaml.cs">
       <DependentUpon>WindowInitialStressState.xaml</DependentUpon>
     </Compile>

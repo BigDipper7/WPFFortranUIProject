@@ -8,7 +8,7 @@ namespace WpfApplicationTM_01
 {
     class FileUtil
     {
-        public Decimal ChangeDataToD(string strData)
+        public static Decimal ChangeDataToD(string strData)
         {
             Decimal dData = 0.0M;
             if (strData.Contains("E"))
@@ -29,7 +29,7 @@ namespace WpfApplicationTM_01
         /// 第几行
         /// 返回总行数
         /// 
-        public List<string> FileRowText(string filePath, CallbackHandler callback)
+        public static List<string> FileRowText(string filePath, CallbackHandler callback)
         {
             List<string> result = new List<string>();
 
@@ -63,26 +63,5 @@ namespace WpfApplicationTM_01
         }
         #endregion
 
-
-
-        private class OutputStrc
-        {
-            private int IP {get; set;}
-            private double Eps1 { get; set; }
-            private double Eps3 { get; set; }
-            private double EpsD { get; set; }
-            private double EpsV { get; set; }
-            private double S1 { get; set; }
-            private double S3 { get; set; }
-            private double p { get; set; }
-            private double q { get; set; }
-            private double ec { get; set; }
-            private double e { get; set; }
-            private double d { get; set; }
-            private double eta { get; set; }
-            private double wp { get; set; }
-            private double Br { get; set; }
-            private double pm { get; set; }
-        }
     }
 }
