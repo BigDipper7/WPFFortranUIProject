@@ -61,6 +61,9 @@
     <Compile Include="WindowParameters.xaml.cs">
       <DependentUpon>WindowParameters.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WindowPlot.xaml.cs">
+      <DependentUpon>WindowPlot.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -78,6 +81,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WindowParameters.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WindowPlot.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

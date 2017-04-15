@@ -76,5 +76,10 @@ namespace WpfApplicationTM_01
         {
             this.invokeFortranProgram();
         }
+
+        private void btnPrint_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
