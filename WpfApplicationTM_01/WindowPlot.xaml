@@ -6,7 +6,7 @@
     <Grid>
         <d3:ChartPlotter Name="plotter" Margin="10,10,20,10">
             <d3:ChartPlotter.HorizontalAxis>
-                <d3:HorizontalDateTimeAxis Name="xDataAxis"/>
+                <d3:HorizontalIntegerAxis Name="xDataAxis"/>
             </d3:ChartPlotter.HorizontalAxis>
             <d3:ChartPlotter.VerticalAxis>
                 <d3:VerticalIntegerAxis Name="yDataAxis"/>
