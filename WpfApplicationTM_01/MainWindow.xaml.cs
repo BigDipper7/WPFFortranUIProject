@@ -50,7 +50,8 @@ namespace WpfApplicationTM_01
             //window.Source = new Uri("WindowInitialStressState.xaml", UriKind.Relative);
             //window.Show();
             WindowInitialStressState winIniStrSta = new WindowInitialStressState();
-            winIniStrSta.Show();
+            //winIniStrSta.Show();
+            winIniStrSta.ShowDialog();
         }
     }
 }
