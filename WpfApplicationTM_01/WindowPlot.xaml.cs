@@ -23,7 +23,9 @@ namespace WpfApplicationTM_01
     {
         private const string filePath = "STRESS-STRAIN.TXT";
 
-        private RawDataSource rawDS = new RawDataSource();
+        private List<RawPoint> rawPoints = new List<RawPoint>();
+
+        private EnumerableDataSource<RawPoint> rawDS = null;
 
         public WindowPlot()
         {
@@ -34,12 +36,36 @@ namespace WpfApplicationTM_01
 
         private void init()
         {
+            rawPoints.Add(new RawPoint(1, 2));
+            rawPoints.Add(new RawPoint(2, 2.5));
+            rawPoints.Add(new RawPoint(3, 2.7));
+            rawPoints.Add(new RawPoint(4, 20));
+            rawPoints.Add(new RawPoint(5, 2.9));
+            rawPoints.Add(new RawPoint(6, 3));
+            rawDS = new EnumerableDataSource<RawPoint>(rawPoints);
+
+
+            rawDS.SetXMapping(data=> data.X);
+            rawDS.SetYMapping(data=> data.Y);
+            
             this.plotter.AddLineGraph(rawDS, Colors.Red, 2, "Test line");
         }
 
         private void readFileContent()
         {
             
+        }
+
+        private class RawPoint
+        {
+            public double X {get; set;}
+            public double Y {get; set;}
+
+            public RawPoint(double x, double y)
+            {
+                this.X = x;
+                this.Y = y;
+            }
         }
 
         #region 获取文本某行数据
