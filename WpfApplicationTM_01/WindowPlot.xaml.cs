@@ -67,59 +67,7 @@ namespace WpfApplicationTM_01
                 this.Y = y;
             }
         }
+        
 
-        #region 获取文本某行数据
-        ///
-        /// 获取文本文件某行数据
-        ///
-        /// 文本文件路径
-        /// 第几行
-        /// 返回总行数
-        /// 
-        private string FileRowText()
-        {
-
-            try 
-            {
-                int i=0;
-                using (StreamReader sr = new StreamReader(filePath)) 
-                {
-                    String line;
-                    while ((line = sr.ReadLine()) != null) 
-                    {
-                        //this.ListBox1.Items.Add("line ");   //增加读出的内容到listbox            
-                        i++;
-
-                    }
-                    //this.TextBox1.Text=i.ToString(); 显示行数
-
-                }
-            }
-            catch 
-            {
-            }
-            return "";
-        }
-        #endregion
-
-        private class OutputStrc
-        {
-            private int IP;
-            private double Eps1;
-            private double Eps3;
-            private double EpsD;
-            private double EpsV;
-            private double S1;
-            private double S3;
-            private double p;
-            private double q;
-            private double ec;
-            private double e;
-            private double d;
-            private double eta;
-            private double wp;
-            private double Br;
-            private double pm;
-        }
     }
 }
