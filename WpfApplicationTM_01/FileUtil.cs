@@ -8,7 +8,7 @@ namespace WpfApplicationTM_01
 {
     class FileUtil
     {
-        private Decimal ChangeDataToD(string strData)
+        public Decimal ChangeDataToD(string strData)
         {
             Decimal dData = 0.0M;
             if (strData.Contains("E"))
@@ -19,6 +19,7 @@ namespace WpfApplicationTM_01
         }
 
 
+        public delegate void CallbackHandler(String str);
 
         #region 获取文本某行数据
         ///
@@ -28,7 +29,7 @@ namespace WpfApplicationTM_01
         /// 第几行
         /// 返回总行数
         /// 
-        private List<string> FileRowText(string filePath)
+        public List<string> FileRowText(string filePath, CallbackHandler callback)
         {
             List<string> result = new List<string>();
 
@@ -40,8 +41,15 @@ namespace WpfApplicationTM_01
                     String line;
                     while ((line = sr.ReadLine()) != null)
                     {
+                        callback(line);
                         //this.ListBox1.Items.Add("line ");   //增加读出的内容到listbox            
                         i++;
+
+                        if (i == 1)
+                        {
+                            continue;
+                        }
+
                         result.Add(line);
                     }
                     //this.TextBox1.Text=i.ToString(); 显示行数
@@ -59,22 +67,22 @@ namespace WpfApplicationTM_01
 
         private class OutputStrc
         {
-            private int IP;
-            private double Eps1;
-            private double Eps3;
-            private double EpsD;
-            private double EpsV;
-            private double S1;
-            private double S3;
-            private double p;
-            private double q;
-            private double ec;
-            private double e;
-            private double d;
-            private double eta;
-            private double wp;
-            private double Br;
-            private double pm;
+            private int IP {get; set;}
+            private double Eps1 { get; set; }
+            private double Eps3 { get; set; }
+            private double EpsD { get; set; }
+            private double EpsV { get; set; }
+            private double S1 { get; set; }
+            private double S3 { get; set; }
+            private double p { get; set; }
+            private double q { get; set; }
+            private double ec { get; set; }
+            private double e { get; set; }
+            private double d { get; set; }
+            private double eta { get; set; }
+            private double wp { get; set; }
+            private double Br { get; set; }
+            private double pm { get; set; }
         }
     }
 }
