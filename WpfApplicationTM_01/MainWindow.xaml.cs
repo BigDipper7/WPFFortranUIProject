@@ -53,5 +53,23 @@ namespace WpfApplicationTM_01
             //winIniStrSta.Show();
             winIniStrSta.ShowDialog();
         }
+
+        private void btnParams_Click(object sender, RoutedEventArgs e)
+        {
+            WindowParameters winParams = new WindowParameters();
+            winParams.ShowDialog();
+        }
+
+        /**
+         * open file
+         * */
+        private void btnImport_Click(object sender, RoutedEventArgs e)
+        {
+            Microsoft.Win32.OpenFileDialog ofd = new Microsoft.Win32.OpenFileDialog();
+            ofd.DefaultExt = ".xls";
+            ofd.Filter = "Excel Files(*.xlsx)|*.xlsx|Excel Files 97-2003(*.xls)|*.xls|所有文件(*.*)|*.*";
+            ofd.RestoreDirectory = true;
+            ofd.ShowDialog();
+        }
     }
 }
