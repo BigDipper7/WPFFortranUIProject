@@ -24,6 +24,7 @@ namespace WpfApplicationTM_01
         private const string filePath = "STRESS-STRAIN.TXT";
 
         private List<RawPoint> rawPoints = new List<RawPoint>();
+        private List<OutputStrc> outStruFromFile = new List<OutputStrc>();
 
         private EnumerableDataSource<RawPoint> rawDS = null;
 
@@ -56,6 +57,8 @@ namespace WpfApplicationTM_01
 
         private void readFileContent()
         {
+            outStruFromFile.Clear();
+
             FileUtil.FileRowText(filePath, (row) => {
                 string[] items = row.Split(new Char[]{' '}, StringSplitOptions.RemoveEmptyEntries);
 
@@ -78,7 +81,8 @@ namespace WpfApplicationTM_01
                 resOutput.wp = (double)FileUtil.ChangeDataToD(items[13]);
                 resOutput.Br = (double)FileUtil.ChangeDataToD(items[14]);
                 resOutput.pm = (double)FileUtil.ChangeDataToD(items[15]);
-                
+                outStruFromFile.Add(resOutput);
+
                 this.rawPoints.Add(new RawPoint(resOutput.S1, resOutput.S3));
                 return;
             });
