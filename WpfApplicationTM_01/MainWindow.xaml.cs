@@ -75,6 +75,8 @@ namespace WpfApplicationTM_01
         private void btnRun_Click(object sender, RoutedEventArgs e)
         {
             this.invokeFortranProgram();
+            WindowPlot winPlot = new WindowPlot();
+            winPlot.ShowDialog();
         }
 
         private void btnPrint_Click(object sender, RoutedEventArgs e)

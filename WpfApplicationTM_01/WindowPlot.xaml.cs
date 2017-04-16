@@ -46,13 +46,26 @@ namespace WpfApplicationTM_01
             rawPoints.Add(new RawPoint(6, 3));*/
 
             readFileContent();
-            rawDS = new EnumerableDataSource<RawPoint>(rawPoints);
+            drawPlotLineGraph();
+            /*rawDS = new EnumerableDataSource<RawPoint>(rawPoints);
 
 
             rawDS.SetXMapping(data=> data.X);
             rawDS.SetYMapping(data=> data.Y);
             
+            this.plotter.AddLineGraph(rawDS, Colors.Red, 2, "Test line");*/
+        }
+
+        private void drawPlotLineGraph()
+        {
+            rawDS = new EnumerableDataSource<RawPoint>(rawPoints);
+
+            rawDS.SetXMapping(data => data.X);
+            rawDS.SetYMapping(data => data.Y);
+
+            
             this.plotter.AddLineGraph(rawDS, Colors.Red, 2, "Test line");
+            this.plotter.UpdateLayout();
         }
 
         private void readFileContent()
@@ -86,6 +99,20 @@ namespace WpfApplicationTM_01
                 this.rawPoints.Add(new RawPoint(resOutput.S1, resOutput.S3));
                 return;
             });
+        }
+
+        private void changeDataSource(string propX, string propY)
+        {
+            this.rawPoints.Clear();
+            foreach (var item in outStruFromFile)
+            {
+                Type t = typeof(OutputStrc);
+                double valueX = (double)t.GetProperty(propX).GetValue(item, null);
+                double valueY = (double)t.GetProperty(propY).GetValue(item, null);
+                Console.WriteLine("%d %d", valueX, valueY);
+                this.rawPoints.Add(new RawPoint(valueX, valueY));
+            }
+            drawPlotLineGraph();
         }
 
         private class OutputStrc
