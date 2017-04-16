@@ -138,20 +138,20 @@ namespace WpfApplicationTM_01
         {
             if (this.comboBoxX == null || this.comboBoxY == null)
                 return;
-            if (String.IsNullOrWhiteSpace(this.comboBoxX.Text) || String.IsNullOrWhiteSpace(this.comboBoxY.Text))
+            if (String.IsNullOrWhiteSpace((this.comboBoxX.SelectedItem as ComboBoxItem).Content as string) || String.IsNullOrWhiteSpace((this.comboBoxY.SelectedItem as ComboBoxItem).Content as string))
                 return;
-            Console.WriteLine(String.Format("x:{0}  y:{1}", this.comboBoxX.Text, this.comboBoxY.Text));
-            //changeDataSource(this.comboBoxX.Text, this.comboBoxY.Text);
+            //Console.WriteLine(String.Format("x:{0}  y:{1}", ((sender as ComboBox).SelectedItem as ComboBoxItem).Content as string, this.comboBoxY.SelectedValue));
+            changeDataSource((this.comboBoxX.SelectedItem as ComboBoxItem).Content as string, (this.comboBoxY.SelectedItem as ComboBoxItem).Content as string);
         }
 
         private void comboBoxY_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (this.comboBoxX == null || this.comboBoxY == null)
                 return;
-            if (String.IsNullOrWhiteSpace(this.comboBoxX.Text) || String.IsNullOrWhiteSpace(this.comboBoxY.Text))
+            if (String.IsNullOrWhiteSpace((this.comboBoxX.SelectedItem as ComboBoxItem).Content as string) || String.IsNullOrWhiteSpace((this.comboBoxY.SelectedItem as ComboBoxItem).Content as string))
                 return;
-            Console.WriteLine(String.Format("x:{0}  y:{1}", this.comboBoxX.Text, this.comboBoxY.Text));
-            //changeDataSource(this.comboBoxX.Text, this.comboBoxY.Text);
+            //Console.WriteLine(String.Format("x:{0}  y:{1}", ((sender as ComboBox).SelectedItem as ComboBoxItem).Content as string, this.comboBoxY.SelectedValue));
+            changeDataSource((this.comboBoxX.SelectedItem as ComboBoxItem).Content as string, (this.comboBoxY.SelectedItem as ComboBoxItem).Content as string);
         }
         
 
