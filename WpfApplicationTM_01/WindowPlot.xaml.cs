@@ -136,12 +136,16 @@ namespace WpfApplicationTM_01
 
         private void comboBoxX_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            if (this.comboBoxX == null || this.comboBoxY == null)
+                return;
+            changeDataSource(this.comboBoxX.Text, this.comboBoxY.Text);
         }
 
         private void comboBoxY_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
+            if (this.comboBoxX == null || this.comboBoxY == null)
+                return;
+            changeDataSource(this.comboBoxX.Text, this.comboBoxY.Text);
         }
         
 
