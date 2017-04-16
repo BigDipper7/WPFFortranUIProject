@@ -37,26 +37,13 @@ namespace WpfApplicationTM_01
 
         private void init()
         {
-            /*
-            rawPoints.Add(new RawPoint(1, 2));
-            rawPoints.Add(new RawPoint(2, 2.5));
-            rawPoints.Add(new RawPoint(3, 2.7));
-            rawPoints.Add(new RawPoint(4, 20));
-            rawPoints.Add(new RawPoint(5, 2.9));
-            rawPoints.Add(new RawPoint(6, 3));*/
-
-            readFileContent();
-            drawPlotLineGraph();
-            /*rawDS = new EnumerableDataSource<RawPoint>(rawPoints);
-
-
-            rawDS.SetXMapping(data=> data.X);
-            rawDS.SetYMapping(data=> data.Y);
             
-            this.plotter.AddLineGraph(rawDS, Colors.Red, 2, "Test line");*/
+            readFileContent();
+            drawPlotLineGraph("init line");
+            
         }
 
-        private void drawPlotLineGraph()
+        private void drawPlotLineGraph(string lineName)
         {
             rawDS = new EnumerableDataSource<RawPoint>(rawPoints);
 
@@ -64,7 +51,7 @@ namespace WpfApplicationTM_01
             rawDS.SetYMapping(data => data.Y);
 
             
-            this.plotter.AddLineGraph(rawDS, Colors.Red, 2, "Test line");
+            this.plotter.AddLineGraph(rawDS, 2, lineName);
             this.plotter.UpdateLayout();
         }
 
@@ -97,7 +84,7 @@ namespace WpfApplicationTM_01
                 outStruFromFile.Add(resOutput);
 
                 this.rawPoints.Add(new RawPoint(resOutput.S1, resOutput.S3));
-                return;
+                
             });
         }
 
@@ -112,7 +99,7 @@ namespace WpfApplicationTM_01
                 Console.WriteLine("%d %d", valueX, valueY);
                 this.rawPoints.Add(new RawPoint(valueX, valueY));
             }
-            drawPlotLineGraph();
+            drawPlotLineGraph("Line(X,Y) "+propX+"-"+propY);
         }
 
         private class OutputStrc
