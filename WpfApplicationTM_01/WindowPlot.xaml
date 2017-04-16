@@ -16,7 +16,7 @@
             <d3:VerticalAxisTitle FontFamily="Arial" Content="yData"/>
             <d3:HorizontalAxisTitle FontFamily="Arial" Content="xData"/>
         </d3:ChartPlotter>
-        <ComboBox Height="23" HorizontalAlignment="Left" Margin="353,278,0,0" Name="comboBoxX" VerticalAlignment="Top" Width="62" SelectionChanged="comboBoxX_SelectionChanged">
+        <ComboBox Height="23" HorizontalAlignment="Right" Margin="0,0,100,5" Name="comboBoxX" VerticalAlignment="Bottom" Width="62" SelectionChanged="comboBoxX_SelectionChanged">
             <ComboBoxItem Content="Eps1" IsSelected="True"/>
             <ComboBoxItem Content="Eps3" />
             <ComboBoxItem Content="EpsD" />
@@ -33,7 +33,7 @@
             <ComboBoxItem Content="Br" />
             <ComboBoxItem Content="pm" />
         </ComboBox>
-        <ComboBox Height="23" HorizontalAlignment="Left" Margin="436,278,0,0" Name="comboBoxY" VerticalAlignment="Top" Width="64" SelectionChanged="comboBoxY_SelectionChanged">
+        <ComboBox Height="23" HorizontalAlignment="Right" Margin="0,0,20,5" Name="comboBoxY" VerticalAlignment="Bottom" Width="64" SelectionChanged="comboBoxY_SelectionChanged">
             <ComboBoxItem Content="Eps1" />
             <ComboBoxItem Content="Eps3" IsSelected="True" />
             <ComboBoxItem Content="EpsD" />

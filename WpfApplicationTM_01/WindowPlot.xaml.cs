@@ -52,7 +52,7 @@ namespace WpfApplicationTM_01
 
             
             this.plotter.AddLineGraph(rawDS, 2, lineName);
-            this.plotter.UpdateLayout();
+            //this.plotter.UpdateLayout();
         }
 
         private void readFileContent()
@@ -138,12 +138,16 @@ namespace WpfApplicationTM_01
         {
             if (this.comboBoxX == null || this.comboBoxY == null)
                 return;
+            if (String.IsNullOrWhiteSpace(this.comboBoxX.Text) || String.IsNullOrWhiteSpace(this.comboBoxY.Text))
+                return;
             changeDataSource(this.comboBoxX.Text, this.comboBoxY.Text);
         }
 
         private void comboBoxY_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (this.comboBoxX == null || this.comboBoxY == null)
+                return;
+            if (String.IsNullOrWhiteSpace(this.comboBoxX.Text) || String.IsNullOrWhiteSpace(this.comboBoxY.Text))
                 return;
             changeDataSource(this.comboBoxX.Text, this.comboBoxY.Text);
         }
