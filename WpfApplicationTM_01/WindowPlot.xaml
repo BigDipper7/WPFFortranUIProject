@@ -4,7 +4,7 @@
         xmlns:d3="http://research.microsoft.com/DynamicDataDisplay/1.0"
         Title="WindowPlot" Height="352" Width="542">
     <Grid>
-        <d3:ChartPlotter Name="plotter" Margin="10,10,20,10">
+        <d3:ChartPlotter Name="plotter" Margin="10,10,20,30">
             <d3:ChartPlotter.HorizontalAxis>
                 <d3:HorizontalIntegerAxis Name="xDataAxis"/>
             </d3:ChartPlotter.HorizontalAxis>
@@ -16,5 +16,39 @@
             <d3:VerticalAxisTitle FontFamily="Arial" Content="yData"/>
             <d3:HorizontalAxisTitle FontFamily="Arial" Content="xData"/>
         </d3:ChartPlotter>
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="353,278,0,0" Name="comboBox1" VerticalAlignment="Top" Width="62">
+            <ComboBoxItem Content="Eps1" IsSelected="True"/>
+            <ComboBoxItem Content="Eps3" />
+            <ComboBoxItem Content="EpsD" />
+            <ComboBoxItem Content="EpsV" />
+            <ComboBoxItem Content="S1" />
+            <ComboBoxItem Content="S3" />
+            <ComboBoxItem Content="p" />
+            <ComboBoxItem Content="q" />
+            <ComboBoxItem Content="ec" />
+            <ComboBoxItem Content="e" />
+            <ComboBoxItem Content="d" />
+            <ComboBoxItem Content="eta" />
+            <ComboBoxItem Content="wp" />
+            <ComboBoxItem Content="Br" />
+            <ComboBoxItem Content="pm" />
+        </ComboBox>
+        <ComboBox Height="23" HorizontalAlignment="Left" Margin="436,278,0,0" Name="comboBox2" VerticalAlignment="Top" Width="64" >
+            <ComboBoxItem Content="Eps1" />
+            <ComboBoxItem Content="Eps3" IsSelected="True" />
+            <ComboBoxItem Content="EpsD" />
+            <ComboBoxItem Content="EpsV" />
+            <ComboBoxItem Content="S1" />
+            <ComboBoxItem Content="S3" />
+            <ComboBoxItem Content="p" />
+            <ComboBoxItem Content="q" />
+            <ComboBoxItem Content="ec" />
+            <ComboBoxItem Content="e" />
+            <ComboBoxItem Content="d" />
+            <ComboBoxItem Content="eta" />
+            <ComboBoxItem Content="wp" />
+            <ComboBoxItem Content="Br" />
+            <ComboBoxItem Content="pm" />        
+        </ComboBox>
     </Grid>
 </Window>
