@@ -96,7 +96,7 @@ namespace WpfApplicationTM_01
                 Type t = typeof(OutputStrc);
                 double valueX = (double)t.GetProperty(propX).GetValue(item, null);
                 double valueY = (double)t.GetProperty(propY).GetValue(item, null);
-                Console.WriteLine("%d %d", valueX, valueY);
+                //Console.WriteLine("%d %d", valueX, valueY);
                 this.rawPoints.Add(new RawPoint(valueX, valueY));
             }
             drawPlotLineGraph("Line(X,Y) "+propX+"-"+propY);
@@ -140,7 +140,8 @@ namespace WpfApplicationTM_01
                 return;
             if (String.IsNullOrWhiteSpace(this.comboBoxX.Text) || String.IsNullOrWhiteSpace(this.comboBoxY.Text))
                 return;
-            changeDataSource(this.comboBoxX.Text, this.comboBoxY.Text);
+            Console.WriteLine(String.Format("x:{0}  y:{1}", this.comboBoxX.Text, this.comboBoxY.Text));
+            //changeDataSource(this.comboBoxX.Text, this.comboBoxY.Text);
         }
 
         private void comboBoxY_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -149,7 +150,8 @@ namespace WpfApplicationTM_01
                 return;
             if (String.IsNullOrWhiteSpace(this.comboBoxX.Text) || String.IsNullOrWhiteSpace(this.comboBoxY.Text))
                 return;
-            changeDataSource(this.comboBoxX.Text, this.comboBoxY.Text);
+            Console.WriteLine(String.Format("x:{0}  y:{1}", this.comboBoxX.Text, this.comboBoxY.Text));
+            //changeDataSource(this.comboBoxX.Text, this.comboBoxY.Text);
         }
         
 
