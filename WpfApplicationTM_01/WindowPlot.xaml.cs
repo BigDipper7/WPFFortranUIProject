@@ -133,6 +133,16 @@ namespace WpfApplicationTM_01
                 this.Y = y;
             }
         }
+
+        private void comboBoxX_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void comboBoxY_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
         
 
     }
