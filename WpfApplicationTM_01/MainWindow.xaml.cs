@@ -74,9 +74,13 @@ namespace WpfApplicationTM_01
 
         private void btnRun_Click(object sender, RoutedEventArgs e)
         {
-            this.invokeFortranProgram();
-            WindowPlot winPlot = new WindowPlot();
-            winPlot.ShowDialog();
+            MessageBoxResult result = MessageBox.Show("Do you want to run the expirment? You have to wait while the program is procssing.", "Confirmation", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (result == MessageBoxResult.Yes)
+            {
+                this.invokeFortranProgram();
+                WindowPlot winPlot = new WindowPlot();
+                winPlot.ShowDialog();
+            }
         }
 
         private void btnPrint_Click(object sender, RoutedEventArgs e)
