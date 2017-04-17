@@ -69,7 +69,7 @@ namespace WpfApplicationTM_01
         public delegate void CallbackWriteData(StreamWriter sw);
         public static void exportDataToCSV(string fileName, CallbackWriteData callback)
         {
-            FileInfo finfo = new FileInfo(fileName);
+            /*FileInfo finfo = new FileInfo(fileName);
             if (!finfo.Exists)
             {
                 finfo.Create();
@@ -78,17 +78,25 @@ namespace WpfApplicationTM_01
             {
                 finfo.Delete();
                 finfo.Create();
-            }
-
-            StreamWriter sw = finfo.AppendText();
-
-            callback(sw);
-            /*for (int i = 0; i < 100; i++)
-            {
-                string strValue = string.Format("D{0:D5}", i);
-                sw.WriteLine(strValue);
             }*/
-            sw.Close();
+            /*if (File.Exists(fileName))
+            {
+                File.Delete(fileName);
+            }
+            File.Create(fileName);
+            */
+            using (FileStream sw = File.OpenWrite(fileName))
+            {
+                StreamWriter ss = new StreamWriter(sw);
+                callback(ss);
+                /*for (int i = 0; i < 100; i++)
+                {
+                    string strValue = string.Format("D{0:D5}", i);
+                    sw.WriteLine(strValue);
+                }*/
+                ss.Close();
+                sw.Close();
+            }
         }
     }
 }

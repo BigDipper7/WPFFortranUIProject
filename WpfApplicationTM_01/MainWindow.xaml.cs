@@ -99,6 +99,7 @@ namespace WpfApplicationTM_01
                     fws.WriteLine(newRow);
                 });
             });
+            MessageBox.Show("Export Success!", "Result", MessageBoxButton.OK);
         }
 
     }
