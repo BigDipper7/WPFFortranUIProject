@@ -90,6 +90,8 @@ namespace WpfApplicationTM_01
 
         private void changeDataSource(string propX, string propY)
         {
+            this.verAxisTitle.Content = propY;
+            this.horAxisTitle.Content = propX;
             this.rawPoints.Clear();
             foreach (var item in outStruFromFile)
             {

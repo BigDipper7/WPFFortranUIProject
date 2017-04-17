@@ -13,8 +13,8 @@
             </d3:ChartPlotter.VerticalAxis>
 
             <d3:Header FontFamily="Arial" Content="Result Info"/>
-            <d3:VerticalAxisTitle FontFamily="Arial" Content="yData"/>
-            <d3:HorizontalAxisTitle FontFamily="Arial" Content="xData"/>
+            <d3:VerticalAxisTitle FontFamily="Arial" Content="yData" Name="verAxisTitle"/>
+            <d3:HorizontalAxisTitle FontFamily="Arial" Content="xData" Name="horAxisTitle"/>
         </d3:ChartPlotter>
         <ComboBox Height="23" HorizontalAlignment="Right" Margin="0,0,100,5" Name="comboBoxX" VerticalAlignment="Bottom" Width="62" SelectionChanged="comboBoxX_SelectionChanged">
             <ComboBoxItem Content="Eps1" IsSelected="True"/>
