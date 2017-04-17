@@ -65,5 +65,30 @@ namespace WpfApplicationTM_01
         }
         #endregion
 
+
+        public delegate void CallbackWriteData(StreamWriter sw);
+        public static void exportDataToCSV(string fileName, CallbackWriteData callback)
+        {
+            FileInfo finfo = new FileInfo(fileName);
+            if (!finfo.Exists)
+            {
+                finfo.Create();
+            }
+            else
+            {
+                finfo.Delete();
+                finfo.Create();
+            }
+
+            StreamWriter sw = finfo.AppendText();
+
+            callback(sw);
+            /*for (int i = 0; i < 100; i++)
+            {
+                string strValue = string.Format("D{0:D5}", i);
+                sw.WriteLine(strValue);
+            }*/
+            sw.Close();
+        }
     }
 }
