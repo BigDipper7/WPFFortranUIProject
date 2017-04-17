@@ -85,12 +85,21 @@ namespace WpfApplicationTM_01
             winPlot.ShowDialog();
         }
 
+        private const string filePath = "STRESS-STRAIN.TXT";
         private void btnExport_Click(object sender, RoutedEventArgs e)
         {
             FileUtil.exportDataToCSV("EXPORT_DATA.csv", (fws) => {
-                
-            
+                string title = "IP,Eps1,Eps3,EpsD,EpsV,S1,S3,p,q,ec,e,d,eta,wp,Br,pm";
+                fws.WriteLine(title);
+
+                FileUtil.FileRowText(filePath, (row) =>
+                {
+                    string[] items = row.Split(new Char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                    string newRow = string.Join(",", items);
+                    fws.WriteLine(newRow);
+                });
             });
         }
+
     }
 }
