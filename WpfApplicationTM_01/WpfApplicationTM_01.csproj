@@ -6,7 +6,7 @@
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{6AF5DC7B-C5C8-49B4-8250-05F1DBD0ED88}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WpfApplicationTM_01</RootNamespace>
     <AssemblyName>WpfApplicationTM_01</AssemblyName>
