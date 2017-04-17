@@ -84,5 +84,13 @@ namespace WpfApplicationTM_01
             WindowPlot winPlot = new WindowPlot();
             winPlot.ShowDialog();
         }
+
+        private void btnExport_Click(object sender, RoutedEventArgs e)
+        {
+            FileUtil.exportDataToCSV("EXPORT_DATA.csv", (fws) => {
+                
+            
+            });
+        }
     }
 }
