@@ -126,6 +126,7 @@
     <Resource Include="images\891833169114742765.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="images\461656282313743163.jpg" />
     <Content Include="libs\DynamicDataDisplay.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
