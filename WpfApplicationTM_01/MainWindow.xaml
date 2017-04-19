@@ -32,16 +32,16 @@
         <Image Height="150" HorizontalAlignment="Left" Margin="258,227,0,0" Name="imgConsModel" Stretch="Fill" VerticalAlignment="Top" Width="200" Source="/WpfApplicationTM_01;component/images/124816649613094028.jpg" />
         <GroupBox Header="Drainage Condition" Height="100" HorizontalAlignment="Left" Margin="12,394,0,0" Name="groupBox3" VerticalAlignment="Top" Width="200">
             <Grid>
-                <CheckBox Content="Drained" Height="16" HorizontalAlignment="Left" Margin="6,6,0,0" Name="checkBox1" VerticalAlignment="Top" />
-                <CheckBox Content="Undrained" Height="16" HorizontalAlignment="Left" Margin="6,28,0,0" Name="checkBox2" VerticalAlignment="Top" />
+                <RadioButton Content="Drained" Height="16" HorizontalAlignment="Left" Margin="6,6,0,0" Name="radioButton1" VerticalAlignment="Top" />
+                <RadioButton Content="Undrained" Height="16" HorizontalAlignment="Left" Margin="6,28,0,0" Name="radioButton2" VerticalAlignment="Top" />
             </Grid>
         </GroupBox>
         <GroupBox Header="Loading Condition" Height="100" HorizontalAlignment="Left" Margin="258,394,0,0" Name="groupBox4" VerticalAlignment="Top" Width="200">
             <Grid>
-                <CheckBox Content="Monotonic" Height="16" HorizontalAlignment="Left" Margin="6,6,0,0" Name="checkBox3" VerticalAlignment="Top" />
-                <CheckBox Content="Cyclic" Height="16" HorizontalAlignment="Left" Margin="6,28,0,0" Name="checkBox4" VerticalAlignment="Top" />
+                <RadioButton Content="Monotonic" Height="16" HorizontalAlignment="Left" Margin="6,6,0,0" Name="radioButton3" VerticalAlignment="Top" />
+                <RadioButton Content="Cyclic" Height="16" HorizontalAlignment="Left" Margin="6,28,0,0" Name="radioButton4" VerticalAlignment="Top" />
                 <Label Content="N =" Height="28" HorizontalAlignment="Left" Margin="62,22,0,0" Name="label1" VerticalAlignment="Top" />
-                <TextBox Height="23" HorizontalAlignment="Left" Margin="98,24,0,0" Name="txtBoxCyclic" VerticalAlignment="Top" Width="47" Text="100" />
+                <TextBox Height="23" HorizontalAlignment="Left" Margin="98,24,0,0" Name="txtBoxCyclic" VerticalAlignment="Top" Width="47" Text="100" /> 
             </Grid>
         </GroupBox>
         <GroupBox Header="Experimental Data" Height="100" HorizontalAlignment="Left" Margin="12,508,0,0" Name="groupBox5" VerticalAlignment="Top" Width="200">
