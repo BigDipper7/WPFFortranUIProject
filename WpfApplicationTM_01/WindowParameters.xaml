@@ -66,7 +66,7 @@
                 <TextBox Height="20" HorizontalAlignment="Left" Margin="62,35,0,0" Name="txtBoxdw" VerticalAlignment="Top" Width="66" Text="0" />
             </Grid>
         </GroupBox>
-        <Button Content="Confirm" Height="23" HorizontalAlignment="Left" Margin="481,327,0,0" Name="btnConfirm" VerticalAlignment="Top" Width="75" />
-        <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="574,327,0,0" Name="btnCancel" VerticalAlignment="Top" Width="75" />
+        <Button Content="Confirm" Height="23" HorizontalAlignment="Left" Margin="481,327,0,0" Name="btnConfirm" VerticalAlignment="Top" Width="75" Click="btnConfirm_Click" />
+        <Button Content="Cancel" Height="23" HorizontalAlignment="Right" Margin="0,327,138,0" Name="btnCancel" VerticalAlignment="Top" Width="75" Click="btnCancel_Click" />
     </Grid>
 </Window>

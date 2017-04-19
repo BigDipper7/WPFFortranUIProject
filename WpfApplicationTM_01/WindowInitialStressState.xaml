@@ -19,7 +19,7 @@
                 <TextBox Height="20" HorizontalAlignment="Left" Margin="62,135,0,0" Name="txtBox23" VerticalAlignment="Top" Width="66" Text="0" />
             </Grid>
         </GroupBox>
-        <Button Content="Confirm" Height="23" HorizontalAlignment="Left" Margin="48,229,0,0" Name="btnConfirm" VerticalAlignment="Top" Width="75" />
-        <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="173,229,0,0" Name="btnConcel" VerticalAlignment="Top" Width="75" />
+        <Button Content="Confirm" Height="23" HorizontalAlignment="Left" Margin="48,229,0,0" Name="btnConfirm" VerticalAlignment="Top" Width="75" Click="btnConfirm_Click" />
+        <Button Content="Cancel" Height="23" HorizontalAlignment="Left" Margin="173,229,0,0" Name="btnConcel" VerticalAlignment="Top" Width="75" Click="btnConcel_Click" />
     </Grid>
 </Window>

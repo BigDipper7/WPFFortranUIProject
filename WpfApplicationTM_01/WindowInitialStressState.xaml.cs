@@ -22,5 +22,15 @@ namespace WpfApplicationTM_01
         {
             InitializeComponent();
         }
+
+        private void btnConcel_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnConfirm_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
