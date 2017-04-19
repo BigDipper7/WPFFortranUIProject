@@ -98,5 +98,32 @@ namespace WpfApplicationTM_01
                 sw.Close();
             }
         }
+
+
+        /**
+          * write file with configed rowContent
+          * 
+          * */
+        public static void editFileContentByRow(string filePath, int rowNum, string newRow)
+        {
+
+            StreamReader sr = new StreamReader(filePath);
+            string[] all = sr.ReadToEnd().Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+            //string oldRow = all[rowId - 1];
+            sr.Close();
+
+            StreamWriter sw = new StreamWriter(filePath, false);
+            string rowTemp = "";
+            for (int i = 0; i < all.Length; i++)
+            {
+                if (i == rowNum - 1)
+                    rowTemp = newRow;
+                else
+                    rowTemp = all[i];
+                sw.WriteLine(rowTemp);
+            }
+            sw.Flush();
+            sw.Close();
+        }
     }
 }

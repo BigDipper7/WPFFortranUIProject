@@ -30,7 +30,9 @@ namespace WpfApplicationTM_01
 
         private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
-
+            FileUtil.editFileContentByRow("test.txt", 2, "哈哈哈");
+            MessageBox.Show("succeeded");
+            this.Close();
         }
     }
 }
