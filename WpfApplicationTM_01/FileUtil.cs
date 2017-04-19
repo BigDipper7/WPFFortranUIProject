@@ -125,5 +125,14 @@ namespace WpfApplicationTM_01
             sw.Flush();
             sw.Close();
         }
+
+        public static string readFileContentByRow(string filePath, int rowNum)
+        {
+            StreamReader sr = new StreamReader(filePath);
+            string[] all = sr.ReadToEnd().Split(new char[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
+            sr.Close();
+
+            return all.Length < rowNum ? "": all[rowNum -1];
+        }
     }
 }
